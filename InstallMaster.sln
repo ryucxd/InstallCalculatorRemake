@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallMaster", "InstallCalculatorRemake\InstallMaster.csproj", "{6A24C5F1-F0B5-4371-90FB-96A9F971F8B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A24C5F1-F0B5-4371-90FB-96A9F971F8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A24C5F1-F0B5-4371-90FB-96A9F971F8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A24C5F1-F0B5-4371-90FB-96A9F971F8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A24C5F1-F0B5-4371-90FB-96A9F971F8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B69F5F9-14BC-46D8-9954-8F2E6C9F6EAD}
+	EndGlobalSection
+EndGlobal

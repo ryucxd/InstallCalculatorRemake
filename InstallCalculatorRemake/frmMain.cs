@@ -109,11 +109,11 @@ namespace InstallCalculatorRemake
             panel_cost = panel * 70;
 
             //add them all together
-            double total_cost = base_price + additional_price + panel_cost;
-            if (total_cost < base_price)
+            double total_cost = base_price + additional_price + panel_cost; //cose to us
+            if (total_cost < base_price) //will never hit this
                 total_cost = base_price;
 
-            double total_sales = total_cost * markup;
+            double total_sales = total_cost * markup; //this is the final
 
             txtTotal.Text = total_sales.ToString();
 

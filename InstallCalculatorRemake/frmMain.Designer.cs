@@ -130,7 +130,7 @@
             this.groupBox2.Size = new System.Drawing.Size(330, 82);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "SR3 / FOOD";
+            this.groupBox2.Text = "SR3 / FLOOD";
             // 
             // txtSr3Double
             // 

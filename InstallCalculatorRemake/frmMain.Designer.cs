@@ -48,8 +48,8 @@
             this.txtPanel = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.chkUnder = new System.Windows.Forms.RadioButton();
             this.chkOver = new System.Windows.Forms.RadioButton();
+            this.chkUnder = new System.Windows.Forms.RadioButton();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
@@ -77,7 +77,7 @@
             this.groupBox1.Controls.Add(this.txtStandardSingle);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 79);
+            this.groupBox1.Location = new System.Drawing.Point(12, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(330, 82);
             this.groupBox1.TabIndex = 1;
@@ -125,7 +125,7 @@
             this.groupBox2.Controls.Add(this.txtSr3Single);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 167);
+            this.groupBox2.Location = new System.Drawing.Point(12, 164);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(330, 82);
             this.groupBox2.TabIndex = 3;
@@ -183,7 +183,7 @@
             this.groupBox3.Controls.Add(this.txtSr4Single);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 255);
+            this.groupBox3.Location = new System.Drawing.Point(12, 252);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(330, 82);
             this.groupBox3.TabIndex = 4;
@@ -239,7 +239,7 @@
             this.groupBox4.Controls.Add(this.txtPanel);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(12, 343);
+            this.groupBox4.Location = new System.Drawing.Point(12, 340);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(330, 82);
             this.groupBox4.TabIndex = 5;
@@ -273,25 +273,12 @@
             this.groupBox5.Controls.Add(this.chkOver);
             this.groupBox5.Controls.Add(this.chkUnder);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(12, 12);
+            this.groupBox5.Location = new System.Drawing.Point(12, 9);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(330, 61);
             this.groupBox5.TabIndex = 30;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "TRAVEL";
-            // 
-            // chkUnder
-            // 
-            this.chkUnder.AutoSize = true;
-            this.chkUnder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkUnder.Location = new System.Drawing.Point(15, 27);
-            this.chkUnder.Name = "chkUnder";
-            this.chkUnder.Size = new System.Drawing.Size(137, 20);
-            this.chkUnder.TabIndex = 20;
-            this.chkUnder.TabStop = true;
-            this.chkUnder.Text = "Up to 2 hours drive";
-            this.chkUnder.UseVisualStyleBackColor = true;
-            this.chkUnder.CheckedChanged += new System.EventHandler(this.chkUnder_CheckedChanged);
             // 
             // chkOver
             // 
@@ -306,10 +293,23 @@
             this.chkOver.UseVisualStyleBackColor = true;
             this.chkOver.CheckedChanged += new System.EventHandler(this.chkOver_CheckedChanged);
             // 
+            // chkUnder
+            // 
+            this.chkUnder.AutoSize = true;
+            this.chkUnder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkUnder.Location = new System.Drawing.Point(15, 27);
+            this.chkUnder.Name = "chkUnder";
+            this.chkUnder.Size = new System.Drawing.Size(137, 20);
+            this.chkUnder.TabIndex = 20;
+            this.chkUnder.TabStop = true;
+            this.chkUnder.Text = "Up to 2 hours drive";
+            this.chkUnder.UseVisualStyleBackColor = true;
+            this.chkUnder.CheckedChanged += new System.EventHandler(this.chkUnder_CheckedChanged);
+            // 
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(129, 460);
+            this.txtTotal.Location = new System.Drawing.Point(127, 451);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 22);
@@ -318,7 +318,7 @@
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(129, 434);
+            this.label9.Location = new System.Drawing.Point(127, 425);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(100, 23);
             this.label9.TabIndex = 7;
@@ -327,7 +327,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(246, 459);
+            this.btnClear.Location = new System.Drawing.Point(244, 450);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 31;
@@ -339,7 +339,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 498);
+            this.ClientSize = new System.Drawing.Size(359, 487);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label9);

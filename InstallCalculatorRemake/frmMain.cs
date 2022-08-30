@@ -44,8 +44,10 @@ namespace InstallCalculatorRemake
 
             //tweakable variables
             int leaves_base_price = 3; //breaking point for leaves base price
-            double base_price_under_2 = 585;
-            double base_price_over_2 = 885;
+            double base_price_under_2 = 315;//Convert.ToDouble(txtBasePrice.Text);//585;
+            double base_price_under_2_minimum = 585;
+            double base_price_over_2 = 450;//Convert.ToDouble(txtBasePrice.Text);//885;
+            double base_price_over_2_minimum = 885;
             double price_per_additonal_leaf_base_under_2 = 195;
             double price_per_additonal_leaf_base_over_2 = 295;
             double markup = 1.6;
@@ -109,11 +111,21 @@ namespace InstallCalculatorRemake
             panel_cost = panel * 70;
 
             //add them all together
-            double total_cost = base_price + additional_price + panel_cost; //cose to us
-            if (total_cost < base_price) //will never hit this
-                total_cost = base_price;
+            double total_cost = base_price + additional_price + panel_cost; //cost to us
+
 
             double total_sales = total_cost * markup; //this is the final
+
+            //if (chkOver.Checked == true)
+            //{
+            //    if (total_cost < base_price_over_2_minimum) 
+            //        total_sales = base_price_over_2_minimum;
+            //}
+            //else
+            //{
+            //    if (total_cost < base_price_under_2_minimum) 
+            //        total_sales = base_price_under_2_minimum;
+            //}
 
             txtTotal.Text = total_sales.ToString();
 
@@ -121,37 +133,37 @@ namespace InstallCalculatorRemake
 
         private void txtStandardSingle_TextChanged(object sender, EventArgs e)
         {
-            calculations();
+            //calculations();
         }
 
         private void txtStandardDouble_TextChanged(object sender, EventArgs e)
         {
-            calculations();
+           // calculations();
         }
 
         private void txtSr3Single_TextChanged(object sender, EventArgs e)
         {
-            calculations();
+            //calculations();
         }
 
         private void txtSr3Double_TextChanged(object sender, EventArgs e)
         {
-            calculations();
+           // calculations();
         }
 
         private void txtSr4Single_TextChanged(object sender, EventArgs e)
         {
-            calculations();
+            //calculations();
         }
 
         private void txtSr4Double_TextChanged(object sender, EventArgs e)
         {
-            calculations();
+          //  calculations();
         }
 
         private void txtPanel_TextChanged(object sender, EventArgs e)
         {
-            calculations();
+          //  calculations();
         }
 
         private void txtStandardSingle_KeyDown(object sender, KeyEventArgs e)
@@ -247,6 +259,7 @@ namespace InstallCalculatorRemake
 
         private void chkUnder_CheckedChanged(object sender, EventArgs e)
         {
+            //885
             calculations();
         }
 
@@ -306,6 +319,25 @@ namespace InstallCalculatorRemake
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void txtBasePrice_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                calculations();
+            }
+        }
+
+        private void txtBasePrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtBasePrice_Leave(object sender, EventArgs e)
+        {
+            calculations();
         }
     }
 }
